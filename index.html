@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/download.jpg" type="image/x-icon">
+    <title>Nitin Parmar | Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="success-message" class="success-message">
+            <div class="message-sent">
+                <img src="assets/images/icon-success-check.svg" alt="">
+                <p>Message Sent!</p>
+            </div>
+            <p class="thanks-msg">Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <div class="name-field">
+                <div class="first-name">
+                    <label for="first-name">First Name <span class="important">*</span></label>
+                    <input class="name-input input" type="text" name="" id="first-name">
+                    <p class="error">This field is required</p>
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name <span class="important">*</span></label>
+                    <input class="name-input input" type="text" name="" id="last-name">
+                    <p class="error">This field is required</p>
+                </div>
+            </div>
+            <div class="email-address">
+                <label for="email-address">Email Address <span class="important">*</span></label>
+                <input class="input name-input" type="email" name="" id="email-address">
+                <p class="error">Please enter a valid email address</p>
+            </div>
+            <div>
+                <span class="query-text">Query Type <span class="important">*</span></span>
+                <div class="query-radio">
+                    <label class="radio-btn" for="general-inquiry">
+                        <input class="radio-checked" type="radio" name="query-type" id="general-inquiry">
+                        General Inquiry
+                    </label>
+                    <label class="radio-btn" for="support-request">
+                        <input class="radio-checked" type="radio" name="query-type" id="support-request">
+                        Support Request
+                    </label>
+                </div>
+                <p class="error">Please select a query type</p>
+            </div>
+            <div class="message-box">
+                <label for="message">Message <span class="important">*</span></label>
+                <textarea class="input" name="" id="message" rows="6"></textarea>
+                <p class="error">This field is required</p>
+            </div>
+            <div class="checkbox-section">
+                <input type="checkbox" name="" id="checkbox">
+                <label for="checkbox">I consent to being contacted by the team <span class="important">*</span></label>
+                <p id="checkbox-error" class="error">To submit this form, please consent to being contacted</p>
+            </div>
+            <button id="submit-btn" type="submit">Submit</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
